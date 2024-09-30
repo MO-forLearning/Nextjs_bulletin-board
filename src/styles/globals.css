@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* .container_box {
+    @apply container p-4
+  } */
+  .newTopic_input {
+    @apply w-full
+  }
+  .form_btn {
+    @apply m-auto block
+  }
+  /* .category_links {
+    @apply  hover:bg-yellow-200 before:mr-2
+  } */
+}
