@@ -1,3 +1,64 @@
-Next.jsを用いた「掲示板サイト」
-- 制作：約220時間
-- Tailwind CSSを使用。TypeScriptを学習後、型定義を入れる予定。
+## 概要
+
+### Next.jsを用いたコメント投稿ができる掲示板サイト<br >
+ カテゴリ登録&トピック作成後、その投稿内容についてコメントできます。<br >
+ 制作：約220時間（本サイト作成で初めてNext.jsに触れました。）
+
+
+## 環境
+
+| 言語・フレームワーク  | バージョン |
+| --------------------- | ---------- |
+| MySQL2                 | 3.6.3        |
+| axios                 | 1.6.0        |
+| Node.js               | 18.17.0    |
+| Next.js                 | 14.0.1     |
+| npm             |  9.6.7      |
+
+
+## 機能一覧
+
+- ログイン機能
+  - 登録されたユーザーのみ閲覧可能
+- コメント投稿機能
+  - 登録、更新日時表示
+- トピック作成機能
+- カテゴリ作成機能
+- 検索機能
+  - 絞り込み機能
+
+
+## ディレクトリ構成
+.
+├── .env.local
+├── .eslintrc.json
+├── .gitignore
+├── .prettierrc
+├── .vscode
+|   └── settings.json
+├── README.md
+├── auth
+|   └── [...nextauth].ts
+├── docker-compose.yml
+├── next-env.d.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+|   ├── next.svg
+|   └── vercel.svg
+├── src
+|   ├── app
+|   ├── components
+|   ├── const
+|   ├── features
+|   ├── libs
+|   ├── pages
+|   └── styles
+├── tailwind.config.js
+├── tsconfig.json
+├── utils
+|   ├── configs
+|   └── typeGuards.ts
+└── yarn.lock
