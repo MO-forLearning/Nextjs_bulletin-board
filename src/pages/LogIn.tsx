@@ -28,7 +28,7 @@ const LogIn = () => {
 
   const postUsers_login = async (values: object) => {
     setError(false)
-    let response
+    let response = []
     try {
       const postData = {
         method: 'POST',

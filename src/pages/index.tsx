@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>NextApp like todoEba</title>
+        <title>Next_Bulletin-Board</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LogIn />
