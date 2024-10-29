@@ -73,8 +73,6 @@
 
 ### コンテナの作成と起動
 
- .env ファイルを以下の環境変数例と[環境変数の一覧](#環境変数の一覧)を元に作成
-
 .env
 NEXT_PUBLIC_URL=http://localhost:3000<br >
 MYSQL_HOST=localhost<br >
