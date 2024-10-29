@@ -32,39 +32,41 @@
 
 
 ## ディレクトリ構成
+<pre>
 .
-├── .env.local<br >
-├── .eslintrc.json<br >
-├── .gitignore<br >
-├── .prettierrc<br >
-├── .vscode<br >
-|   └── settings.json<br >
-├── README.md<br >
-├── auth<br >
-|   └── [...nextauth].ts<br >
-├── docker-compose.yml<br >
-├── next-env.d.ts<br >
-├── next.config.js<br >
-├── package-lock.json<br >
-├── package.json<br >
-├── postcss.config.js<br >
-├── public<br >
-|   ├── next.svg<br >
-|   └── vercel.svg<br >
-├── src<br >
-|   ├── app<br >
-|   ├── components<br >
-|   ├── const<br >
-|   ├── features<br >
-|   ├── libs<br >
-|   ├── pages<br >
-|   └── styles<br >
-├── tailwind.config.js<br >
-├── tsconfig.json<br >
-├── utils<br >
-|   ├── configs<br >
-|   └── typeGuards.ts<br >
+├── .env.local
+├── .eslintrc.json
+├── .gitignore
+├── .prettierrc
+├── .vscode
+|   └── settings.json
+├── README.md
+├── auth
+|   └── [...nextauth].ts
+├── docker-compose.yml
+├── next-env.d.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+|   ├── next.svg
+|   └── vercel.svg
+├── src
+|   ├── app
+|   ├── components
+|   ├── const
+|   ├── features
+|   ├── libs
+|   ├── pages
+|   └── styles
+├── tailwind.config.js
+├── tsconfig.json
+├── utils
+|   ├── configs
+|   └── typeGuards.ts
 └── yarn.lock
+</pre>
 
 
 ## 開発環境構築
