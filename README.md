@@ -27,14 +27,9 @@
   - 登録、更新日時表示
 - トピック作成機能
 - カテゴリ作成機能
-<<<<<<< HEAD
   - カテゴリ別トピック一覧表示
 - 検索機能
   - 絞り込み機能（タイトル、トピック本文、コメント）
-=======
-- 検索機能
-  - 絞り込み機能
->>>>>>> fa2f1778f87d963f097d3f1f8b9deb494b3d9a69
 
 
 ## ディレクトリ構成
@@ -79,11 +74,6 @@
 
 ### コンテナの作成と起動
 
-<<<<<<< HEAD
- .env ファイルを以下の環境変数例と[環境変数の一覧](#環境変数の一覧)を元に作成
-
-=======
->>>>>>> fa2f1778f87d963f097d3f1f8b9deb494b3d9a69
 .env
 NEXT_PUBLIC_URL=http://localhost:3000<br >
 MYSQL_HOST=localhost<br >
@@ -96,3 +86,38 @@ MYSQL_PASSWORD=rootroot
 .env ファイルを作成後、以下のコマンドで開発環境を構築
 
 npm run dev
+
+
+## データベース設計
+
+### usersテーブル
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| user_id            | integer    | null: false, unique: true      |
+| user_name          | string     | null: false                    |
+| email              | string     | null: false                    |
+| password           | string     | null: false                    |
+
+### titlesテーブル
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| title_id           | integer    | null: false, unique: true      |
+| category_id        | integer    | null: false                    |
+| user_id            | integer    | null: false                    |
+| title_name         | string     | null: false                    |
+| outline            | string     | null: false                    |
+
+### commentsテーブル
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| comment_id         | integer    | null: false, unique: true      |
+| title_id           | integer    | null: false                    |
+| user_id            | integer    | null: false                    |
+| comment_content    | string     | null: false                    |
+| created_at         | string     | null: false                    |
+
+### categoriesテーブル
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| category_id        | integer    | null: false, unique: true      |
+| category_name      | string     | null: false                    |
